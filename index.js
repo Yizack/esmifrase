@@ -5,7 +5,7 @@ const config = require("./config.json");
 var T = new Twit(config);
 
 var frases = fs.readFileSync('lista_de_frases.txt').toString().split("\n"); // Leer todas las frases de lista_de_frases.txt
-var indice = fs.readFileSync('indice.txt').toString(); // Leer índice de las frases
+var indice = parseInt(fs.readFileSync('indice.txt').toString()); // Leer índice de las frases
 var MAX_FRASES = 0;
 const hora = 12; // Hora que será publicada el tweet
 const minuto = 0; // Minuto que será publicado el tweet
