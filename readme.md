@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/Yizack/esmifrase.svg?branch=master)](https://travis-ci.com/Yizack/esmifrase)
 [![dependencies Status](https://david-dm.org/yizack/esmifrase/status.svg)](https://david-dm.org/yizack/esmifrase)
 # Esmifrase
-Bot de twitter para publicar una frase por día de una lista de texto con Node.js.
+Bot de twitter para publicar una frase de una lista de texto por día a las 12:00 con Node.js.
 
 ## Requerimientos Generales
 - Solicitar [Twitter App](https://developer.twitter.com/en/apps)
