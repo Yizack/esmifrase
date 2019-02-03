@@ -5,7 +5,6 @@
     "author": "Yizack Rangel",
     "main": "index.js",
     "scripts": {
-        "tests": "./node_modules/twit/tests/rest.js",
         "start": "node index.js"
     },
     "repository": {
