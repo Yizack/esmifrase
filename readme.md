@@ -16,7 +16,7 @@ Bot de twitter para publicar una frase por día de una lista de texto con Node.j
 [![Keys](https://github.com/Yizack/yizack.github.io/raw/master/img/esmifrase/twitter-app4.jpg)](https://developer.twitter.com/en/apps)
 - Generar access token y access token secret en la pestaña `Keys and tokens`
 [![Keys](https://github.com/Yizack/yizack.github.io/raw/master/img/esmifrase/twitter-app5.jpg)](https://developer.twitter.com/en/apps)
-- Editar `config.json`
+- Editar [`config.json`](https://github.com/Yizack/esmifrase/blob/master/config.json)
   - `consumer_key` Reemplazar `XXXXXX` con el Consumer API key .
   - `consumer_secret` Reemplazar `XXXXXX` con el Consumer API secret key.
   - `access_token` Reemplazar `XXXXXX` con el Access token.
