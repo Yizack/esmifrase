@@ -1,0 +1,23 @@
+{
+    "name": "esmifrase",
+    "version": "1.0.0",
+    "description": "Esmifrase twitter app",
+    "author": "Yizack Rangel",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Yizack/esmifrase.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Yizack/esmifrase/issues"
+    },
+    "homepage": "https://github.com/Yizack/esmifrase",
+    "dependencies": {
+        "twit": "^2.2.11"
+    }
+}
