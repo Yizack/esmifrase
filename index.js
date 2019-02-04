@@ -10,13 +10,13 @@ var MAX_FRASES = 0;
 const hora = 12; // Hora que será publicada el tweet
 const minuto = 0; // Minuto que será publicado el tweet
 
-for(let i in frases) // Contar la cantidad de frases en lista_de_frases.txt
-    MAX_FRASES = i; // Asignarlo a MAX_FRASES
+for(let i in frases) // Contar la cantidad de frases que hay en lista_de_frases.txt
+    MAX_FRASES = i; // Asignar la cantidad todal de frases a MAX_FRASES
 
 setInterval(tweet, 60000); // Verificar cada minuto la hora para publicar un tweet
 
 function tweet() {
-    var datetime = new Date(); // Objeto Fecha
+    var datetime = new Date(); // Fecha y tiempo actual
     if(hora == datetime.getHours() && minuto == datetime.getMinutes()){ // Si son las 12:00 (formato 24h)
         publicar(frases[indice]); // Publicar frase del índice actual en twitter
         console.log(datetime.getHours() + ":" + datetime.getMinutes()); // Imprimir en consola la hora de publicación
@@ -33,13 +33,9 @@ function tweet() {
 
 function publicar(frase){
     T.post('statuses/update', { status: frase }, function(err, data, response) { // Publicar una frase en twitter
-        if (!err){
-            if(response){
-                console.log("Se ha twiteado una frase.")
-                console.log(data.text) // Imprimir la frase
-            }
-        }
-        else
+        if(response)
+            console.log("Se ha twitteado una frase.");
+        if(err)
             console.log("Ha ocurrido un error: " + err);
     });
 }
