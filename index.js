@@ -13,7 +13,8 @@ const minuto = 0; // Minuto que será publicado el tweet
 for(let i in frases) // Contar la cantidad de frases que hay en lista_de_frases.txt
     MAX_FRASES = i; // Asignar la cantidad todal de frases a MAX_FRASES
 
-setInterval(tweet, 60000); // Verificar cada minuto la hora para publicar un tweet
+var timer = new intervalo(60000, tweet); // Verificar cada minuto la hora para publicar un tweet
+timer.run();
 
 function tweet() {
     var datetime = new Date(); // Fecha y tiempo actual
@@ -38,4 +39,32 @@ function publicar(frase){
         if(err)
             console.log("Ha ocurrido un error: " + err);
     });
+}
+
+// Accurate Javascript setInterval replacement
+// Función de intervalo precisa por manast en https://gist.github.com/manast/1185904
+function intervalo(duration, fn){
+    this.baseline = undefined
+
+    this.run = function(){
+        if(this.baseline === undefined){
+            this.baseline = new Date().getTime()
+        }
+        fn()
+        var end = new Date().getTime()
+        this.baseline += duration
+        var nextTick = duration - (end - this.baseline)
+        console.log(nextTick);
+        if(nextTick<0){
+            nextTick = 0
+        }
+        (function(i){
+            i.timer = setTimeout(function(){
+                i.run(end)
+            }, nextTick)
+        }(this))
+    }
+    this.stop = function(){
+        clearTimeout(this.timer)
+    }
 }
