@@ -9,15 +9,15 @@ Bot de twitter para publicar una frase de una lista de texto por día a las 12:0
 ### Configuración General
 - Entrar en [Twitter Developers](https://developer.twitter.com/en/apps)
  y seleccionar `Details` en la app que desees utilizar\
-[![Details Image1](https://github.com/Yizack/yizack.github.io/raw/master/images/esmifrase/twitter-app1.jpg)](https://developer.twitter.com/en/apps)
+[![Details Image1](https://yizack.com/images/esmifrase/twitter-app1.jpg)](https://developer.twitter.com/en/apps)
 - Editar los detalles de tu App
-[![Details Image2](https://github.com/Yizack/yizack.github.io/raw/master/images/esmifrase/twitter-app2.jpg)](https://developer.twitter.com/en/apps)
+[![Details Image2](https://yizack.com/images/esmifrase/twitter-app2.jpg)](https://developer.twitter.com/en/apps)
 - Describir el uso de la App para los empleados de twitter
-[![Descripción de la App](https://github.com/Yizack/yizack.github.io/raw/master/images/esmifrase/twitter-app3.jpg)](https://developer.twitter.com/en/apps)
+[![Descripción de la App](https://yizack.com/images/esmifrase/twitter-app3.jpg)](https://developer.twitter.com/en/apps)
 - Asignar todos los permisos en la pestaña `Permissions`
-[![Keys](https://github.com/Yizack/yizack.github.io/raw/master/images/esmifrase/twitter-app4.jpg)](https://developer.twitter.com/en/apps)
+[![Keys](https://yizack.com/images/esmifrase/twitter-app4.jpg)](https://developer.twitter.com/en/apps)
 - Generar access token y access token secret en la pestaña `Keys and tokens`
-[![Keys](https://github.com/Yizack/yizack.github.io/raw/master/images/esmifrase/twitter-app5.jpg)](https://developer.twitter.com/en/apps)
+[![Keys](https://yizack.com/images/esmifrase/twitter-app5.jpg)](https://developer.twitter.com/en/apps)
 - Editar [`config.json`](https://github.com/Yizack/esmifrase/blob/master/config.json)
   - `consumer_key` Reemplazar `XXXXXX` con el Consumer API key .
   - `consumer_secret` Reemplazar `XXXXXX` con el Consumer API secret key.
